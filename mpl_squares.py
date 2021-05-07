@@ -7,7 +7,7 @@
 # @GitHub  : https://github.com/harveymei/
 
 """
-Visualization with Python¶
+Visualization with Python
 Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.
 """
 
