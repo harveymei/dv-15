@@ -25,7 +25,9 @@ squares = [1, 4, 9, 16, 25]
 # Line width, in points.
 # 使用linewidth指定线条宽度点数
 # https://matplotlib.org/stable/api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D.set_linewidth
-plt.plot(squares, linewidth=5)
+# plt.plot(squares, linewidth=5) # 仅向函数传递了y值参数，x值默认为0
+input_vlues = [1, 2, 3, 4, 5]
+plt.plot(input_vlues, squares, linewidth=5)
 
 # 设置图表标题并设置坐标轴刻度
 # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.title.html#matplotlib.pyplot.title
