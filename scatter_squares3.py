@@ -18,7 +18,17 @@ x_value = list(range(1, 1001))
 y_value = [x**2 for x in x_value]
 
 # 绘图
-plt.scatter(x_value, y_value, s=40)
+# plt.scatter(x_value, y_value, s=40)
+#
+# https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.scatter.html#matplotlib.pyplot.scatter
+# 删除数据点轮廓，默认为蓝色点黑色轮廓
+# plt.scatter(x_value, y_value, edgecolors='none', s=40)
+# 自定义点的颜色
+# plt.scatter(x_value, y_value, c='red', edgecolors='none', s=40)
+# 使用RGB值自定义点的颜色
+# 使用元组分别表示红绿蓝分量
+# 值越接近0，指定的颜色越深，值越接近1，指定的颜色越浅
+plt.scatter(x_value, y_value, c=(0, 0, 0.8), edgecolors='none', s=40)
 
 # 设置图表标题及坐标轴标签
 plt.title("Square Numbers", fontsize=24)
