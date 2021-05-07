@@ -20,6 +20,7 @@ y_value = [x**2 for x in x_value]
 # https://matplotlib.org/stable/gallery/color/colormap_reference.html#sphx-glr-gallery-color-colormap-reference-py
 # 参数c设置为y值列表，将y值较小的点显示为浅蓝色，并将y值较大的点显示为深蓝色
 # 参数cmap指定映射颜色
+# PyCharm语法提示：Cannot find reference 'Blues' in 'cm.py'
 plt.scatter(x_value, y_value, c=y_value, cmap=plt.cm.Blues, edgecolors='none', s=40)
 
 plt.title("Square Numbers", fontsize=24)
