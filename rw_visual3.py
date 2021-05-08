@@ -28,6 +28,16 @@ while True:  # 循环
     plt.scatter(0, 0, c='green', edgecolors='none', s=100)
     plt.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors='none', s=100)
 
+    # 隐藏坐标轴
+    # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.axes.html#matplotlib.pyplot.axes
+    # plt.axes().get_xaxis().set_visible(False)
+    # plt.axes().get_yaxis().set_visible(False)
+    # 以上方法无效
+    # gca：Get the current Axes, creating one if necessary.
+    # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.gca.html#matplotlib.pyplot.gca
+    plt.gca().get_xaxis().set_visible(False)
+    plt.gca().get_yaxis().set_visible(False)
+
     plt.show()
 
     keep_running = input("Make another walk? (y/n) ")  # 用户输入
