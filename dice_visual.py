@@ -37,4 +37,4 @@ hist.x_title = "Result"
 hist.y_title = "Frequency of Result"
 
 hist.add("D6 + D6", frequencies)  # 添加
-hist.render_to_file("dice_visual_05111102.svg")  # 渲染到文件
+hist.render_to_file("dice_visual_05111115.svg")  # 渲染到文件
